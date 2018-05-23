@@ -1,0 +1,13 @@
+<div >
+  <% @articles.each do |article| %>
+    <%= link_to article_path(article.slug) do %>
+      <div class="row card">
+        <div class="col s3 offset-s1 black-text">
+          <h5><%=article.title%><h5>
+        </div>
+      <% end%>
+      </div>
+    <%end%>
+</div>
+<%= paginate @articles %>
+</div>

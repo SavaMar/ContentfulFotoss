@@ -1,0 +1,7 @@
+<% @categories.each do |category| %>
+  <div class="contentful_product">
+    <h1>
+      <a href="<%= category_path(category.id) %>"><%= category.title %></a>
+    </h1>
+  </div>
+<% end %>

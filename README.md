@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. clone this repo
+2. bundle install
+3. RAILS_ENV=development rake secret
+add all *secret* stuff in secret.yml  :)
+4. rails s
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### injoy
+P.S. there is absolutly no design, but still don't give up

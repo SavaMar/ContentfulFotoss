@@ -6,13 +6,13 @@ class ContentfulClient
     )
   end
 
-  def self.get_articles(category_id, skip, limit)
+  def self.get_articles(category_id, page)
     self.client.entries(
       content_type: "article",
       "fields.categories.sys.id[in]" => category_id,
       "fields.availableOn[in]" => ["infotoss.com"],
-      limit: limit,
-      skip: skip
+      limit: 8,
+      skip: (page.to_i - 1) * 8
     )
   end
 
